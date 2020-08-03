@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RecordAudioActivity">
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="64sp"
+        android:id="@+id/record_time"/>
+
+
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:id="@+id/Recordbtn"
+        android:src="@drawable/ic_mic_black_24dp"
+        android:text="Start Recording"
+        android:scaleType="fitXY"
+        android:background="@drawable/round_button_off"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/round_button_off"
+            android:src="@drawable/ic_pause_black_24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/Stopbtn"
+            android:text="Stop Recording"
+            android:scaleType="fitXY"
+            android:background="@drawable/round_button_off"
+            android:src="@drawable/ic_stop_black_24dp"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Playbtn"
+        android:text="Play Recording"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/StopPlayingbtn"
+        android:text="Stop Playing" />
+
+</LinearLayout>
